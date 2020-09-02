@@ -1,0 +1,9 @@
+matrix:
+  include:
+    - language: node_js
+      node_js: "node"
+      cache: yarn
+      before_script:
+        - cd backend
+        - yarn
+      script: yarn run test
