@@ -9,7 +9,6 @@ chai.should();
 
 describe("Server", () => {
     describe("GET /", () => {
-        // Test to get all students record
         it("should load route", (done) => {
             chai.request(app)
                 .get('/')
